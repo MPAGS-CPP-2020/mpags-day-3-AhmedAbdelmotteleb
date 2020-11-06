@@ -4,9 +4,11 @@
 
 class CaesarCipher{
     public:
-    //constructor
-    CaesarCipher(const size_t& key_input);
-    size_t key;
+    //constructors
+    explicit CaesarCipher(const size_t& key_input);
+    explicit CaesarCipher(const std::string& key_input);
+    //members
+    size_t key{0}; //default value of key is zero
 };
 
 #endif // MPAGSCIPHER_CAESARCIPHER_HPP 
